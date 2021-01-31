@@ -4,7 +4,7 @@ from django.db import models
 class Article(models.Model):
     title = models.CharField(max_length=200)
     slug = models.SlugField(db_index=True)
-    description = models.CharField(max_length=500)
+    description = models.TextField()
     
     
     
